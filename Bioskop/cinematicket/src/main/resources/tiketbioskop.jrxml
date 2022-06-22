@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tiketBioskop" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="61b7f427-607f-4ff1-9d2f-0621fc0ed772">
+    <queryString>
+        <![CDATA[]]>
+    </queryString>
+    <field name="username" class="java.lang.String"/>
+    <field name="email" class="java.lang.String"/>
+    <field name="filmName" class="java.lang.String"/>
+    <field name="tanggalTayang" class="java.lang.String"/>
+    <field name="jamMulai" class="java.lang.String"/>
+    <field name="jamSelesai" class="java.lang.String"/>
+    <field name="hargaTiket" class="java.lang.String"/>
+    <field name="seatsCode" class="java.lang.String"/>
+    <field name="studioName" class="java.lang.String"/>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <columnHeader>
+        <band height="296" splitType="Stretch">
+            <rectangle>
+                <reportElement x="122" y="38" width="558" height="221" forecolor="#5D85CF" backcolor="#5D85CF" uuid="122ae9e1-74ce-4d7d-ae39-902fbf360b75"/>
+                <graphicElement>
+                    <pen lineStyle="Solid"/>
+                </graphicElement>
+            </rectangle>
+            <textField>
+                <reportElement x="310" y="123" width="160" height="27" uuid="f0f5d3d3-1714-4824-9b05-71e800c27ede"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="16" isBold="false"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+            </textField>
+            <ellipse>
+                <reportElement x="649" y="75" width="60" height="60" forecolor="#FFFFFF" uuid="98856411-6671-4868-a8d7-7291172a621e"/>
+            </ellipse>
+            <ellipse>
+                <reportElement x="90" y="75" width="60" height="60" forecolor="#FFFFFF" uuid="d289683c-0649-463f-acb7-a78bd3b02efc"/>
+            </ellipse>
+            <staticText>
+                <reportElement x="292" y="63" width="218" height="50" uuid="cb1f037f-aeb4-49d0-96b3-9f0131d6ff1d"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="26" isBold="true"/>
+                </textElement>
+                <text><![CDATA[CINEMA TICKET]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="190" y="123" width="110" height="27" uuid="dc714e43-6fc2-4d95-b67a-984323afad55"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size="20" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Buyer]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="300" y="123" width="10" height="27" uuid="334c46d8-c473-444f-a840-278ee4145b34"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size="20"/>
+                </textElement>
+                <text><![CDATA[:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="190" y="150" width="110" height="27" uuid="028a05fc-2972-4e79-b8d1-f1d9a5442973"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="20" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Film Name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="300" y="150" width="10" height="27" uuid="d00f4124-5c69-4d12-9181-df9e3d3ca1b3"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="20"/>
+                </textElement>
+                <text><![CDATA[:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="310" y="150" width="160" height="27" uuid="48a62013-bdb7-40bf-b019-fa8ad220f006"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="16" isBold="false"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{filmName}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="190" y="177" width="110" height="27" uuid="09781034-5409-4b1a-92c8-959d45ce0b25"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="20" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Seat]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="430" y="123" width="110" height="27" uuid="b455d8bc-b5f0-4ee8-a40e-8e60b223019d"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="20" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Date]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="430" y="150" width="110" height="27" uuid="f9a97c18-8177-4df2-9e37-ac007009661c"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="20" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Time]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="430" y="177" width="110" height="27" uuid="794e806d-0ea2-4ad1-bc75-96da03f15496"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size="20" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Price]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="300" y="177" width="10" height="27" uuid="9eb87a4a-89ee-48da-b3b3-c373d9f36a55"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="20"/>
+                </textElement>
+                <text><![CDATA[:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="520" y="123" width="10" height="27" uuid="d246188a-83f1-4bbd-a312-cf74b1fbd0e1"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="20"/>
+                </textElement>
+                <text><![CDATA[:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="520" y="150" width="10" height="27" uuid="40996405-c22a-4cf7-bff4-1780286ad506"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="20"/>
+                </textElement>
+                <text><![CDATA[:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="520" y="177" width="10" height="27" uuid="5d0f7b88-f1af-411e-a8e8-5a78f04bdf20"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="20"/>
+                </textElement>
+                <text><![CDATA[:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="310" y="177" width="160" height="27" uuid="0f480bd4-2f92-4b36-bc42-be05310806af"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="16" isBold="false"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{seatsCode}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="530" y="123" width="160" height="27" uuid="609ee220-bfbc-46e6-8b73-2c5e395b8488"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="16" isBold="false"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{tanggalTayang}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="530" y="177" width="160" height="27" uuid="332ad0da-c77b-4201-a1f4-0623e36a3d90"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="16" isBold="false"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{hargaTiket}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="530" y="150" width="160" height="27" uuid="1c02595c-99a3-47f4-8d9e-a9c6d5d8bd04"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="16" isBold="false"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{jamMulai}]]></textFieldExpression>
+            </textField>
+            <ellipse>
+                <reportElement x="90" y="165" width="60" height="60" forecolor="#FFFFFF" uuid="b256c9ea-1a66-4229-95c3-7390df959545"/>
+            </ellipse>
+            <ellipse>
+                <reportElement x="649" y="165" width="60" height="60" forecolor="#FFFFFF" uuid="91b6f0ba-d35e-408d-b21b-795dfba1f87e"/>
+            </ellipse>
+            <textField pattern="MMM d, yyyy h:mm:ss a">
+                <reportElement x="292" y="225" width="218" height="22" uuid="006e53e9-e6de-492a-a810-3dca29a35936"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+            </textField>
+        </band>
+    </columnHeader>
+</jasperReport>
